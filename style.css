@@ -1,13 +1,7 @@
-:root {
-    --bg-page-outer: #212121;
-    --bg-page-inner: #1a1a1a;
-    --border-radius-large: 35px;
-}
-
 body {
-    margin: 20;
-    padding: 20;
-    background-color: var(--bg-page-outer);
+    margin: 10;
+    padding: 10;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,10 +11,10 @@ body {
 .main-container {
     width: 100%;
     max-width: 450px;
-    background-color: var(--bg-page-inner);
+    background-color: #212121;
     padding: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-radius: 15px;
+    border-radius: 30px;
     box-sizing: border-box;
 }
 
@@ -31,7 +25,7 @@ body {
 
 .profile-pic-area {
     width: 100%;
-    border-radius: var(--border-radius-large);
+    border-radius: 23px;
     overflow: hidden;
     aspect-ratio: 3 / 2;
 }
@@ -51,7 +45,7 @@ body {
 
 .profile-pic-area-2 {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 20px;
     overflow: hidden;
     aspect-ratio: 3 / 1;
 }
@@ -62,7 +56,6 @@ body {
     object-fit: cover;
     display: block;
 }
-00
 
 /* --- GRADE DE LINKS --- */
 .link-grid {
@@ -74,7 +67,7 @@ body {
 /* --- CARTÕES DE IMAGEM --- */
 .grid-item {
     display: block;
-    border-radius: 25px;
+    border-radius: 20px;
     text-decoration: none;
     aspect-ratio: 1 / 1;
     overflow: hidden;
@@ -101,7 +94,7 @@ body {
     aspect-ratio: 2 / 1; /* Transforma em um retângulo horizontal */
     object-fit: cover;
     display: block;
-    border-radius: 25px;
+    border-radius: 20px;
     text-decoration: none;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
