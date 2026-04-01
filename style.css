@@ -5,8 +5,8 @@
 }
 
 body {
-    margin: 250;
-    padding: 250;
+    margin: 200;
+    padding: 200;
     background-color: var(--bg-page-outer);
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ body {
     object-fit: cover;
     display: block;
 }
-
+00
 
 /* --- GRADE DE LINKS --- */
 .link-grid {
