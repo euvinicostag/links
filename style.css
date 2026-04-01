@@ -1,28 +1,12 @@
-/* --- ESTILOS GLOBAIS E VARIÁVEIS --- */
 :root {
-    /* Cores do Design */
-    --bg-page-outer: #f4f4f4; /* Fundo externo da página (fora do "celular") */
-    --bg-page-inner: #1a1a1a; /* Fundo escuro interno, igual à imagem */
-    
-    --card-bg-linkedin: #0077b5;
-    --card-bg-behance: #ffffff;
-    --card-bg-instagram: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    --card-bg-youtube: #000000;
-    
-    --text-light: #ffffff;
-    --text-dark: #121212;
-    --text-behance-blue: #0077b5;
-    --text-youtube-red: #ff0000;
-    
-    --border-radius-large: 20px; /* Bordas arredondadas dos cartões, igual à imagem */
-    
-    --transition-smooth: all 0.3s ease;
+    --bg-page-outer: #f4f4f4;
+    --bg-page-inner: #1a1a1a;
+    --border-radius-large: 20px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif; /* Padrão serifado para o nome */
     background-color: var(--bg-page-outer);
     display: flex;
     justify-content: center;
@@ -30,28 +14,25 @@ body {
     min-height: 100vh;
 }
 
-/* --- CONTAINER PRINCIPAL (SIMULAÇÃO DE TELA DE CELULAR) --- */
 .main-container {
     width: 100%;
-    max-width: 450px; /* Largura máxima, ótima para mobile */
+    max-width: 450px;
     background-color: var(--bg-page-inner);
     padding: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-radius: 15px; /* Borda leve do container */
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
-/* --- CABEÇALHO COM A FOTO GRANDONA --- */
+/* --- CABEÇALHO --- */
 .profile-header {
     margin-bottom: 25px;
 }
 
 .profile-pic-area {
-    position: relative;
     width: 100%;
     border-radius: var(--border-radius-large);
     overflow: hidden;
-    /* Define o aspecto de imagem grandona retangular */
     aspect-ratio: 3 / 2;
 }
 
@@ -59,148 +40,36 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.share-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: rgba(255,255,255,0.2);
-    color: var(--text-light);
-    border: none;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: var(--transition-smooth);
-}
-
-.share-btn:hover {
-    background-color: rgba(255,255,255,0.4);
-}
-
-/* --- INFORMAÇÕES DE NOME E PROFISSÃO --- */
-.profile-info {
-    color: var(--text-light);
-    margin-bottom: 35px;
-}
-
-.profile-info h1 {
-    font-family: 'Times New Roman', Times, serif; /* Serifado forte, igual à imagem */
-    font-weight: 700;
-    font-size: 1.9rem;
-    margin: 0 0 5px 0;
-    letter-spacing: -0.5px;
-}
-
-.profile-info p {
-    font-family: sans-serif; /* Sem-serifa limpo para profissão */
-    font-size: 0.95rem;
-    margin: 0;
-    opacity: 0.8;
+    display: block;
 }
 
 /* --- GRADE DE LINKS --- */
 .link-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Força duas colunas */
-    gap: 20px; /* Espaçamento entre os cartões */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-/* --- ESTILO BASE DO CARTÃO DE LINK --- */
+/* --- CARTÕES DE IMAGEM --- */
 .grid-item {
-    position: relative;
     display: block;
     border-radius: var(--border-radius-large);
-    padding: 25px;
     text-decoration: none;
-    box-sizing: border-box;
-    /* Torna o cartão perfeitamente quadrado ou quase */
     aspect-ratio: 1 / 1;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Garante que a imagem preencha o cartão perfeitamente */
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
 }
 
 .grid-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-/* --- ÍCONE DE LINK NO CANTO --- */
-.link-icon-circle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 0.9rem;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.8;
-}
-
-/* --- TEXTO DENTRO DO CARTÃO --- */
-.grid-item h3 {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.25;
-    margin: 0;
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-}
-
-/* --- ESTILOS ESPECÍFICOS PARA CADA CARTÃO --- */
-
-/* LinkedIn (Azul) */
-.linkedin {
-    background-color: var(--card-bg-linkedin);
-    color: var(--text-light);
-}
-.linkedin .link-icon-circle {
-    background-color: #005a87;
-    color: var(--text-light);
-}
-
-/* Behance (Branco) */
-.behance {
-    background-color: var(--card-bg-behance);
-    color: var(--text-dark);
-}
-.behance .link-icon-circle {
-    background-color: #eeeeee;
-    color: var(--text-dark);
-}
-.behance-text {
-    color: var(--text-behance-blue);
-}
-
-/* Instagram (Gradiente) */
-.instagram {
-    background: var(--card-bg-instagram);
-    color: var(--text-light);
-}
-.instagram .link-icon-circle {
-    background-color: rgba(255,255,255,0.3);
-    color: var(--text-light);
-}
-
-/* YouTube (Preto) */
-.youtube {
-    background-color: var(--card-bg-youtube);
-    color: var(--text-light);
-}
-.youtube .link-icon-circle {
-    background-color: rgba(255,255,255,0.3);
-    color: var(--text-light);
-}
-.youtube-text {
-    color: var(--text-youtube-red);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
