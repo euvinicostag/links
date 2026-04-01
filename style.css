@@ -50,6 +50,12 @@ body {
     gap: 20px;
 }
 
+.link-grid-b {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+}
+
 /* --- CARTÕES DE IMAGEM --- */
 .grid-item {
     display: block;
