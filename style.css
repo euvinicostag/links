@@ -99,6 +99,7 @@ body {
 .grid-item full-width {
     grid-column: span 2;
     aspect-ratio: 2 / 1; /* Transforma em um retângulo horizontal */
+    object-fit: cover;
     display: block;
     border-radius: 25px;
     text-decoration: none;
