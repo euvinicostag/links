@@ -5,8 +5,8 @@
 }
 
 body {
-    margin: 200;
-    padding: 200;
+    margin: 20;
+    padding: 20;
     background-color: var(--bg-page-outer);
     display: flex;
     justify-content: center;
