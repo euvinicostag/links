@@ -118,9 +118,9 @@ body {
     .main-container {
         max-width: 1150px;
         display: flex;
-        flex-direction: row; /* Coloca os itens lado a lado */
+        flex-direction: row; /* itens lado a lado */
         align-items: top;
-        gap: 50px; /* Espaço de respiro entre sua bio e os links */
+        gap: 50px; /* respiro entre bio e links */
         padding: 35px;
     }
 
