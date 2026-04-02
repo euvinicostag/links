@@ -1,8 +1,9 @@
 body {
-    margin: 10;
-    padding: 10;
+    margin: 15px;
+    padding: 15px;
     background-color: #1a1a1a;
     display: flex;
+	flex-direction: column; /* Isso aqui obriga os itens a ficarem um embaixo do outro */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -13,8 +14,7 @@ body {
     max-width: 450px;
     background-color: #212121;
     padding: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-radius: 30px;
+    border-radius: 35px;
     box-sizing: border-box;
 }
 
@@ -25,9 +25,8 @@ body {
 
 .profile-pic-area {
     width: 100%;
-    border-radius: 23px;
+    border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 3 / 2;
 }
 
 .profile-pic {
@@ -40,7 +39,7 @@ body {
 
 /* --- CABEÇALHO 2 dois dois dois--- */
 .profile-header-2 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .profile-pic-area-2 {
@@ -89,13 +88,24 @@ body {
 }
 
 /* Faz o item ocupar as duas colunas do grid */
-.grid-item full-width {
+.full-width {
     grid-column: span 2;
-    aspect-ratio: 2 / 1; /* Transforma em um retângulo horizontal */
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    aspect-ratio: 2 / 1; 
+}
+
+
+/* --- RODAPÉ DE DIREITOS AUTORAIS --- */
+.footer-legal {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 15px;
+}
+
+.footer-legal p {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #666666; /* Cinza escuro, discreto no fundo quase preto */
+    letter-spacing: 0.5px;
+    margin: 0;
 }
