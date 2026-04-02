@@ -1,7 +1,7 @@
 body {
     margin: 10px;
     padding: 10px;
-    background-color: #1a1a1a;
+    background-color: #708090;
     display: flex;
 	flex-direction: column;
     justify-content: center;
@@ -11,21 +11,22 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 450px;
-    background-color: #212121;
+    max-width: 460px;
+    background-color: #5c6671;
     padding: 20px;
-    border-radius: 35px;
+    border-radius: 30px;
     box-sizing: border-box;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
 
 /* --- CABEÇALHO --- */
 .profile-header {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .profile-pic-area {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -44,7 +45,7 @@ body {
 
 .profile-pic-area-2 {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
     aspect-ratio: 3 / 1;
 }
@@ -66,8 +67,7 @@ body {
 /* --- CARTÕES DE IMAGEM --- */
 .grid-item {
     display: block;
-    border-radius: 20px;
-    text-decoration: none;
+    border-radius: 15px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -84,7 +84,7 @@ body {
 
 .grid-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
 }
 
 /* Ocupar duas colunas do grid */
@@ -105,7 +105,7 @@ body {
 .footer-legal p {
     font-family: Arial, sans-serif;
     font-size: 11px;
-    color: #666666;
-    letter-spacing: 0.5px;
+    color: #cacad0;
+    letter-spacing: 0.25px;
     margin: 0;
 }
