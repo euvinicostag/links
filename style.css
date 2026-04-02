@@ -109,3 +109,30 @@ body {
     letter-spacing: 0.25px;
     margin: 0;
 }
+
+
+/* =========================================
+   RESPONSIVIDADE: DESKTOP
+   ========================================= */
+@media (min-width: 900px) {
+    .main-container {
+        max-width: 1150px;
+        display: flex;
+        flex-direction: row; /* Coloca os itens lado a lado */
+        align-items: top;
+        gap: 50px; /* Espaço de respiro entre sua bio e os links */
+        padding: 35px;
+    }
+
+    /* lado esquerdo (Foto e Bio) */
+    .profile-header {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    /* lado direito (grade de botões) */
+    .link-grid {
+        flex: 1.3;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
