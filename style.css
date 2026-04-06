@@ -115,11 +115,11 @@ body {
    ========================================= */
 @media (min-width: 900px) {
     .main-container {
-        max-width: 1150px;
+        max-width: 1440px;
         display: flex;
-        flex-direction: row; /* itens lado a lado */
+        flex-direction: row;
         align-items: top;
-        gap: 55px; /* respiro entre bio e links */
+        gap: 48px; /* respiro entre bio e links */
         padding: 35px;
     }
 
@@ -131,7 +131,7 @@ body {
 
     /* lado direito (grade de botões) */
     .link-grid {
-        flex: 1.3;
-        grid-template-columns: repeat(3, 1fr);
+        flex: 1.5;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
