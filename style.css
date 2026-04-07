@@ -90,6 +90,9 @@ body {
 .full-width {
     grid-column: span 2;
     aspect-ratio: 2 / 1; 
+	object-fit: cover;
+    display: block;
+    border: none;
 }
 
 
@@ -115,17 +118,17 @@ body {
    ========================================= */
 @media (min-width: 900px) {
     .main-container {
-        max-width: 1350px;
+        max-width: 88%;
         display: flex;
         flex-direction: row;
-        align-items: top;
-        gap: 48px; /* respiro entre bio e links */
+        align-items: flex-start;
+        gap: 48px; /* respiro bio-links */
         padding: 35px;
     }
 
     /* lado esquerdo (Foto e Bio) */
     .profile-header {
-        flex: 1;
+        flex: .9;
         margin-bottom: 0;
     }
 
@@ -134,4 +137,12 @@ body {
         flex: 1.5;
         grid-template-columns: repeat(4, 1fr);
     }
+	
+	.full-width {
+    grid-column: span 2;
+    aspect-ratio: 2.14 / 1; 
+	object-fit: cover;
+    display: block;
+    border: none;
+}
 }
