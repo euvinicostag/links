@@ -1,7 +1,7 @@
 body {
     margin: 10px;
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #F0F0F0;
     display: flex;
 	flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 460px;
-    background-color: #F0F0F0;
+    background-color: #e0e0e0;
     padding: 20px;
     border-radius: 30px;
     box-sizing: border-box;
@@ -60,7 +60,7 @@ body {
 .link-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
 }
 
 /* --- CARTÕES DE IMAGEM --- */
@@ -118,18 +118,18 @@ body {
    ========================================= */
 @media (min-width: 900px) {
     .main-container {
-        max-width: 88%;
+        margin-top: 15px;
+		max-width: 90%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        gap: 48px; /* respiro bio-links */
+        gap: 45px; /* respiro bio-links */
         padding: 35px;
     }
 
     /* lado esquerdo (Foto e Bio) */
     .profile-header {
-        flex: .9;
-        margin-bottom: 0;
+        flex: 1;
     }
 
     /* lado direito (grade de botões) */
@@ -140,9 +140,6 @@ body {
 	
 	.full-width {
     grid-column: span 2;
-    aspect-ratio: 2.14 / 1; 
-	object-fit: cover;
-    display: block;
-    border: none;
+    aspect-ratio: 2.18 / 1; 
 }
 }
